@@ -1,4 +1,4 @@
 #!/usr/bin/env bash
 # Writing a script for RSA key creation.
 
-ssh-keygen -t rsa -f school -b 4096 -N betty
+ssh-keygen -b 4096 -f school -N betty

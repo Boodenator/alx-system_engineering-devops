@@ -1,4 +1,3 @@
-#!/usr/bin/env bash
 # configuration file
 Host *
       PasswordAuthentication no

@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+# Web servers act as a software to create and manage the HTML pages
+
+sudo apt-get update
+sudo apt-get install -y nginx
+echo 'Hello World!' > /var/www/html/index.html
+sudo service nginx start

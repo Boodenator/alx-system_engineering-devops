@@ -1,5 +1,4 @@
-#!/usr/bin/pup
-# install an especific version of flask (2.1.0)
+#install flask ver 2.0.1
 
 package { 'flask':
   ensure   => '2.1.0',

@@ -1,11 +1,15 @@
 #!/usr/bin/python3
-"""Function used by subscribers for querying Reddit subreddit."""
+"""Function querying subscribers in Reddit subreddit."""
 import requests
 
 
 def number_of_subscribers(subreddit):
-    """Returning total subscribers numbers of subreddit."""
-    url = f"https://www.reddit.com/r/{subreddit}/about.json"
+    """
+    Returning total number of subscribers on subreddit.
+
+    If an invalid subreddit is given, return 0.
+    """
+    url = "https://www.reddit.com/r/{}/about.json".format(subreddit)
     headers = {
         "User-Agent": "linux:0x16.api.advanced:v1.0.0 (by /u/bdov_)"
     }

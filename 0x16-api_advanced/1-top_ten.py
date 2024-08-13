@@ -1,13 +1,14 @@
 #!/usr/bin/python3
-"""Function print out hot posts of Reddit subreddit."""
+"""Function to print top ten posts"""
 import requests
 
 
 def top_ten(subreddit):
-    """Print out the 10 hottest post titles in subreddit."""
+    """Print out top 10 hottest posts subreddit."""
     url = "https://www.reddit.com/r/{}/hot/.json".format(subreddit)
     headers = {
-        "User-Agent": "linux:0x16.api.advanced:v1.0.0 (by /u/bdov_)"
+        "User-Agent": "0x16-api_advanced:project:\
+v1.0.0 (by /u/firdaus_cartoon_jr)"
     }
     params = {
         "limit": 10
